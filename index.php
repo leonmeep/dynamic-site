@@ -1,5 +1,5 @@
 <?php
 
-require 'index.vew.php';
+require 'views/index.vew.php';
 
 
