@@ -2,12 +2,17 @@
 
 require 'functions.php';
 
-$heading = 'Home Page';
+$uri = $_SERVER['REQUEST_URI'];
+
+dd(parse_url($uri));
 
 
+if ($uri == '/') {
 
+    require 'controllers/index.php';
+} else if ($uri == '/about') {
+    require 'controllers/about.php';
 
-require 'views/index.vew.php';
-
-
-
+} else if ($uri == '/contact') {
+    require 'controllers/contact.php';
+}
