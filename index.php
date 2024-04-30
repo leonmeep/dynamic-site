@@ -2,9 +2,7 @@
 
 require 'functions.php';
 
-$uri = $_SERVER['REQUEST_URI'];
-
-dd(parse_url($uri));
+$uri = parse_url($_SERVER['REQUEST_URI'])['path'];
 
 
 if ($uri == '/') {
