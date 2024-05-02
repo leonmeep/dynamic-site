@@ -13,7 +13,7 @@ $routes = [
 
 
 
-function routeToController($uri, $routes)
+function routeToController($uri, $routes): void
 {
     if (array_key_exists($uri, $routes)) {
         require $routes[$uri];

@@ -8,7 +8,7 @@ $config = require 'config.php';
 $db = new Database($config['database']);
 
 $id = $_GET['id'];
-$query = "SELECT * FROM posts where id = :id ";
+$query = "SELECT * FROM posts WHERE id = :id";
 
 
 

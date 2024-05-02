@@ -12,10 +12,11 @@ class Database
 
         $this->connection = new PDO($dsn, $username = 'root', $password = '', [
             PDO::ATTR_DEFAULT_FETCH_MODE => PDO::FETCH_ASSOC,
+
         ]);
     }
 
-    public function query($query, $params = [])
+    public function query($query, $params = []): bool|PDOStatement
     {
 
         $statement = $this->connection->prepare($query);
