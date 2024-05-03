@@ -9,7 +9,7 @@ $title = 'Note';
 $currentUserId = 1;
 
 
-$note = $db->query('SELECT * FROM notes WHERE  id = :id', [
+$note = $db->query('SELECT * FROM notes WHERE  user_id = :id', [
     'id' => $_GET['id']
 ])->findOrFail();
 
