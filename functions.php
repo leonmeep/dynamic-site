@@ -21,3 +21,13 @@ function authorize($condition, $status = Response::FORBIDDEN) : void
         abort($status);
     }
 }
+
+function abort($code = 404)
+{
+    http_response_code($code);
+
+    require "views/{$code}.php";
+
+    die();
+
+}
