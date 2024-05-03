@@ -3,6 +3,7 @@
 
 
 $heading = 'Home Page';
+$title = 'Home';
 
 
 

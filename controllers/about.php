@@ -2,6 +2,7 @@
 
 
 $heading = 'About Us';
+$title = 'About';
 
 
 

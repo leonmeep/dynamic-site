@@ -3,6 +3,7 @@
 
 
 $heading= 'Contact Us';
+$title = 'Contact';
 
 
 
