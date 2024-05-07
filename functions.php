@@ -1,7 +1,5 @@
 <?php
-
-function dd($value) : void
-
+function dd($value)
 {
     echo "<pre>";
     var_dump($value);
@@ -9,25 +7,26 @@ function dd($value) : void
     die();
 }
 
-
-function urlIs($value) : bool
+function urlIs($value)
 {
     return $_SERVER['REQUEST_URI'] === $value;
 }
 
-function authorize($condition, $status = Response::FORBIDDEN) : void
+function authorize($condition, $status = Response::FORBIDDEN)
 {
     if (! $condition) {
         abort($status);
     }
 }
 
-function abort($code = 404)
+function base_path($path)
 {
-    http_response_code($code);
+    return BASE_PATH . $path;
+}
 
-    require "views/{$code}.php";
+function view($path, $attributes = [])
+{
+    extract($attributes);
 
-    die();
-
+    require base_path('views/' . $path);
 }

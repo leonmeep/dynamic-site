@@ -1,14 +1,11 @@
 <?php
 
+view("index.view.php", [
+    'heading' => 'Home',
+    'title' => 'Home',
+]);
 
-
-$heading = 'Home Page';
-$title = 'Home';
-
-
-
-
-require 'views/index.vew.php';
+require 'views/notes/index.view.php';
 
 
 
