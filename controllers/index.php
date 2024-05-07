@@ -1,14 +1,10 @@
 <?php
 
 
-
-$heading = 'Home Page';
-$title = 'Home';
-
-
-
-
-require 'views/index.vew.php';
+view('index.view.php', [
+    'heading' => "Home",
+    'title' => "Home"
+]);
 
 
 
