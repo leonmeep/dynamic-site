@@ -1,10 +1,6 @@
 <?php
 
-
-view('index.view.php', [
-    'heading' => "Home",
-    'title' => "Home"
+view("index.view.php", [
+    'heading' => 'Home',
 ]);
-
-
 

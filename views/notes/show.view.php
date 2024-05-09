@@ -10,6 +10,10 @@
         </p>
 
         <p><?= htmlspecialchars($note['body']) ?></p>
+
+        <button>
+            <a href="#">Delete</a>
+        </button>
     </div>
 </main>
 
